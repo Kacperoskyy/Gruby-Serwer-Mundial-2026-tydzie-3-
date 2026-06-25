@@ -26,7 +26,7 @@
         h1 { font-size: 2.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 0 20px var(--accent-blue); }
         
         .container { 
-            width: 100%; max-width: 800px; 
+            width: 100%; max-width: 900px; 
             background: rgba(255, 255, 255, 0.05); 
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -37,17 +37,20 @@
         table { width: 100%; border-collapse: collapse; }
         th { 
             color: var(--accent-blue); 
-            font-size: 0.9rem; 
+            font-size: 0.8rem; 
             text-transform: uppercase; 
-            padding: 20px; 
+            padding: 15px; 
             border-bottom: 2px solid var(--accent-purple); 
         }
         td { 
-            padding: 15px; 
+            padding: 12px; 
             border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
             text-align: center; 
-            color: rgba(255, 255, 255, 0.7);
+            color: rgba(255, 255, 255, 0.8);
         }
+        
+        /* Stylizacja kolumny z miejscem */
+        .rank-col { font-weight: bold; color: var(--accent-blue); }
         
         tr:hover { background: rgba(0, 210, 255, 0.1); }
         
@@ -65,26 +68,35 @@
 
     <header>
         <h1>Mundial 2026: Tydzień 3.</h1>
-        <p>Czysta karta. Nowy start. Kto pierwszy zdobędzie punkty?</p>
+        <p>Nowa tabela, nowe zasady – kto zajmie miejsce na podium?</p>
     </header>
 
     <div class="container">
         <table>
             <thead>
                 <tr>
-                    <th>Dzień 1</th><th>Dzień 2</th><th>Dzień 3</th><th>Dzień 4</th><th>Dzień 5</th><th>Dzień 6</th><th>Dzień 7</th>
+                    <th>Msc</th><th>Dzień 1</th><th>Dzień 2</th><th>Dzień 3</th><th>Dzień 4</th><th>Dzień 5</th><th>Dzień 6</th><th>Dzień 7</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
-                </tr>
+                <!-- 11 miejsc dla graczy -->
+                <tr><td class="rank-col">1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="rank-col">2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="rank-col">3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="rank-col">4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="rank-col">5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="rank-col">6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="rank-col">7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="rank-col">8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="rank-col">9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="rank-col">10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td class="rank-col">11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
             </tbody>
         </table>
     </div>
 
     <footer>
-        <div class="new-era">TYDZIEŃ 3. ROZPOCZĘTY – CZEKAMY NA PIERWSZE WYNIKI!</div>
+        <div class="new-era">TYDZIEŃ 3. ROZPOCZĘTY – MIEJSCA CZEKAJĄ!</div>
     </footer>
 
 </body>

@@ -6,6 +6,7 @@
     <title>Gruby Serwer Mundial 2026 - Tydzień 3</title>
     <style>
         :root {
+            --bg-dark: #0f0c29;
             --bg-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
             --accent-blue: #00d2ff;
             --accent-purple: #9d50bb;
@@ -15,7 +16,7 @@
             background: var(--bg-gradient); 
             background-attachment: fixed;
             color: var(--text); 
-            font-family: 'Segoe UI', sans-serif; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
             padding: 40px 20px; 
             display: flex; 
             flex-direction: column; 
@@ -26,7 +27,7 @@
         h1 { font-size: 2.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 0 20px var(--accent-blue); }
         
         .container { 
-            width: 100%; max-width: 900px; 
+            width: 100%; max-width: 800px; 
             background: rgba(255, 255, 255, 0.05); 
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -37,22 +38,20 @@
         table { width: 100%; border-collapse: collapse; }
         th { 
             color: var(--accent-blue); 
-            font-size: 0.8rem; 
+            font-size: 0.9rem; 
             text-transform: uppercase; 
-            padding: 15px; 
+            padding: 20px; 
             border-bottom: 2px solid var(--accent-purple); 
         }
         td { 
-            padding: 12px; 
+            padding: 15px; 
             border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
             text-align: center; 
-            color: rgba(255, 255, 255, 0.8);
         }
         
-        /* Stylizacja kolumny z miejscem */
-        .rank-col { font-weight: bold; color: var(--accent-blue); }
-        
         tr:hover { background: rgba(0, 210, 255, 0.1); }
+        .name { text-align: left; font-weight: bold; }
+        .total { color: var(--accent-blue); font-weight: 900; font-size: 1.1rem; }
         
         footer { margin-top: 50px; text-align: center; }
         .new-era { 
@@ -61,6 +60,7 @@
             border-radius: 50px;
             font-weight: bold;
             display: inline-block;
+            cursor: pointer;
         }
     </style>
 </head>
@@ -68,35 +68,36 @@
 
     <header>
         <h1>Mundial 2026: Tydzień 3.</h1>
-        <p>Nowa tabela, nowe zasady – kto zajmie miejsce na podium?</p>
+        <p>Nowa tabela, nowe wyzwanie – kto przejmie tron?</p>
     </header>
 
     <div class="container">
         <table>
             <thead>
                 <tr>
-                    <th>Msc</th><th>Dzień 1</th><th>Dzień 2</th><th>Dzień 3</th><th>Dzień 4</th><th>Dzień 5</th><th>Dzień 6</th><th>Dzień 7</th>
+                    <th>Poz.</th><th style="text-align: left;">Zawodnik</th>
+                    <th>D1</th><th>D2</th><th>D3</th><th>D4</th><th>D5</th><th>D6</th><th>D7</th><th>SUMA</th>
                 </tr>
             </thead>
             <tbody>
-                <!-- 11 miejsc dla graczy -->
-                <tr><td class="rank-col">1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td class="rank-col">2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td class="rank-col">3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td class="rank-col">4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td class="rank-col">5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td class="rank-col">6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td class="rank-col">7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td class="rank-col">8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td class="rank-col">9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td class="rank-col">10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td class="rank-col">11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <!-- Reset tabeli dla Tygodnia 3 -->
+                <tr><td>1</td><td class="name">Pandusia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
+                <tr><td>2</td><td class="name">Orzeł</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
+                <tr><td>3</td><td class="name">Mineblack</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
+                <tr><td>4</td><td class="name">Kacperoskyy</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
+                <tr><td>5</td><td class="name">Michu</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
+                <tr><td>6</td><td class="name">Kasti</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
+                <tr><td>7</td><td class="name">Ketchup</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
+                <tr><td>8</td><td class="name">Tonia</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
+                <tr><td>9</td><td class="name">Symciu</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
+                <tr><td>10</td><td class="name">Grubcio</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
+                <tr><td>11</td><td class="name">DawidKoniu</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total">0</td></tr>
             </tbody>
         </table>
     </div>
 
     <footer>
-        <div class="new-era">TYDZIEŃ 3. ROZPOCZĘTY – MIEJSCA CZEKAJĄ!</div>
+        <div class="new-era">LICZNIK ZEROWY – TYDZIEŃ 3. ROZPOCZĘTY!</div>
     </footer>
 
 </body>

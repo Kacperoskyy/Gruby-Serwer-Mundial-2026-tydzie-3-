@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gruby Serwer Mundial 2026 - Tydzień 3</title>
+    <style>
+        :root {
+            --bg-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            --accent-blue: #00d2ff;
+            --accent-purple: #9d50bb;
+            --text: #ffffff;
+        }
+        body { 
+            background: var(--bg-gradient); 
+            background-attachment: fixed;
+            color: var(--text); 
+            font-family: 'Segoe UI', sans-serif; 
+            padding: 40px 20px; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+        }
+        
+        header { margin-bottom: 40px; text-align: center; }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 0 20px var(--accent-blue); }
+        
+        .container { 
+            width: 100%; max-width: 800px; 
+            background: rgba(255, 255, 255, 0.05); 
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px; padding: 30px; 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.5); 
+        }
+        
+        table { width: 100%; border-collapse: collapse; }
+        th { 
+            color: var(--accent-blue); 
+            font-size: 0.9rem; 
+            text-transform: uppercase; 
+            padding: 20px; 
+            border-bottom: 2px solid var(--accent-purple); 
+        }
+        td { 
+            padding: 15px; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05); 
+            text-align: center; 
+            color: rgba(255, 255, 255, 0.7);
+        }
+        
+        tr:hover { background: rgba(0, 210, 255, 0.1); }
+        
+        footer { margin-top: 50px; text-align: center; }
+        .new-era { 
+            background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple));
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Mundial 2026: Tydzień 3.</h1>
+        <p>Czysta karta. Nowy start. Kto pierwszy zdobędzie punkty?</p>
+    </header>
+
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Dzień 1</th><th>Dzień 2</th><th>Dzień 3</th><th>Dzień 4</th><th>Dzień 5</th><th>Dzień 6</th><th>Dzień 7</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer>
+        <div class="new-era">TYDZIEŃ 3. ROZPOCZĘTY – CZEKAMY NA PIERWSZE WYNIKI!</div>
+    </footer>
+
+</body>
+</html>

@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mundial 2026: Tutaj nikt nie odpoczywa</title>
+    <title>Mundial 2026: Finał Tygodnia</title>
     <style>
         :root {
             --bg-gradient: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            --accent-gold: #FFD700;
             --accent-blue: #00d2ff;
             --accent-purple: #9d50bb;
             --text: #ffffff;
         }
         body { background: var(--bg-gradient); background-attachment: fixed; color: var(--text); font-family: 'Segoe UI', sans-serif; padding: 40px 20px; display: flex; flex-direction: column; align-items: center; }
         header { margin-bottom: 40px; text-align: center; }
-        h1 { font-size: 2.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 0 20px var(--accent-blue); }
+        h1 { font-size: 2.5rem; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 0 20px var(--accent-gold); }
         .container { width: 100%; max-width: 950px; background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; padding: 30px; box-shadow: 0 15px 35px rgba(0,0,0,0.5); }
         table { width: 100%; border-collapse: collapse; }
-        th { color: var(--accent-blue); font-size: 0.8rem; text-transform: uppercase; padding: 15px; border-bottom: 2px solid var(--accent-purple); }
+        th { color: var(--accent-gold); font-size: 0.8rem; text-transform: uppercase; padding: 15px; border-bottom: 2px solid var(--accent-purple); }
         td { padding: 12px; border-bottom: 1px solid rgba(255, 255, 255, 0.05); text-align: center; color: rgba(255, 255, 255, 0.8); }
-        .rank-col { font-weight: bold; color: var(--accent-blue); }
+        .rank-col { font-weight: bold; color: var(--accent-gold); }
         .name-col { text-align: left; font-weight: bold; color: #fff; }
-        .total-col { font-weight: 900; color: var(--accent-blue); font-size: 1.1rem; }
-        tr:hover { background: rgba(0, 210, 255, 0.1); }
+        .total-col { font-weight: 900; color: var(--accent-gold); font-size: 1.1rem; }
+        tr:hover { background: rgba(255, 215, 0, 0.1); }
         footer { margin-top: 50px; text-align: center; }
-        .new-era { background: linear-gradient(90deg, var(--accent-blue), var(--accent-purple)); padding: 15px 30px; border-radius: 50px; font-weight: bold; display: inline-block; }
+        .grand-final { background: linear-gradient(90deg, #FFD700, #E6AC00); color: #000; padding: 20px 40px; border-radius: 50px; font-weight: bold; display: inline-block; }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Mundial 2026: Tutaj nikt nie odpoczywa</h1>
+        <h1>Mundial 2026: Finał Tygodnia</h1>
     </header>
 
     <div class="container">
@@ -40,21 +41,21 @@
                 </tr>
             </thead>
             <tbody>
-                <tr><td class="rank-col">1</td><td class="name-col">Ketchup</td><td>150</td><td>250</td><td>300</td><td>150</td><td>100</td><td>150</td><td>0</td><td class="total-col">1100</td></tr>
-                <tr><td class="rank-col">2</td><td class="name-col">Pandusia</td><td>100</td><td>250</td><td>350</td><td>100</td><td>100</td><td>150</td><td>0</td><td class="total-col">1050</td></tr>
-                <tr><td class="rank-col">3</td><td class="name-col">Kacperoskyy</td><td>250</td><td>150</td><td>200</td><td>50</td><td>100</td><td>100</td><td>0</td><td class="total-col">850</td></tr>
-                <tr><td class="rank-col">4</td><td class="name-col">Grubcio</td><td>150</td><td>150</td><td>0</td><td>150</td><td>150</td><td>100</td><td>0</td><td class="total-col">700</td></tr>
+                <tr><td class="rank-col">1</td><td class="name-col">Ketchup</td><td>150</td><td>250</td><td>300</td><td>150</td><td>100</td><td>150</td><td>150</td><td class="total-col">1250</td></tr>
+                <tr><td class="rank-col">2</td><td class="name-col">Pandusia</td><td>100</td><td>250</td><td>350</td><td>100</td><td>100</td><td>150</td><td>150</td><td class="total-col">1200</td></tr>
+                <tr><td class="rank-col">3</td><td class="name-col">Kacperoskyy</td><td>250</td><td>150</td><td>200</td><td>50</td><td>100</td><td>100</td><td>50</td><td class="total-col">900</td></tr>
+                <tr><td class="rank-col">4</td><td class="name-col">Grubcio</td><td>150</td><td>150</td><td>0</td><td>150</td><td>150</td><td>100</td><td>200</td><td class="total-col">900</td></tr>
                 <tr><td class="rank-col">5</td><td class="name-col">Orzeł</td><td>100</td><td>150</td><td>200</td><td>100</td><td>50</td><td>0</td><td>0</td><td class="total-col">650</td></tr>
                 <tr><td class="rank-col">6</td><td class="name-col">Tonia</td><td>150</td><td>200</td><td>100</td><td>50</td><td>50</td><td>100</td><td>0</td><td class="total-col">650</td></tr>
-                <tr><td class="rank-col">7</td><td class="name-col">Mineblack</td><td>100</td><td>150</td><td>200</td><td>50</td><td>100</td><td>0</td><td>0</td><td class="total-col">600</td></tr>
-                <tr><td class="rank-col">8</td><td class="name-col">DawidKoniu</td><td>150</td><td>150</td><td>100</td><td>100</td><td>0</td><td>50</td><td>0</td><td class="total-col">550</td></tr>
+                <tr><td class="rank-col">7</td><td class="name-col">DawidKoniu</td><td>150</td><td>150</td><td>100</td><td>100</td><td>0</td><td>50</td><td>200</td><td class="total-col">750</td></tr>
+                <tr><td class="rank-col">8</td><td class="name-col">Mineblack</td><td>100</td><td>150</td><td>200</td><td>50</td><td>100</td><td>0</td><td>0</td><td class="total-col">600</td></tr>
                 <tr><td class="rank-col">9</td><td class="name-col">Kasti</td><td>250</td><td>0</td><td>0</td><td>0</td><td>50</td><td>150</td><td>0</td><td class="total-col">450</td></tr>
                 <tr><td class="rank-col">10</td><td class="name-col">Symciu</td><td>150</td><td>200</td><td>0</td><td>50</td><td>50</td><td>0</td><td>0</td><td class="total-col">450</td></tr>
-                <tr><td class="rank-col">11</td><td class="name-col">Kaktus</td><td>0</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total-col">200</td></tr>
+                <tr><td class="rank-col">11</td><td class="name-col">Olaf</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>150</td><td class="total-col">250</td></tr>
                 <tr><td class="rank-col">12</td><td class="name-col">Takes</td><td>0</td><td>50</td><td>0</td><td>0</td><td>100</td><td>50</td><td>0</td><td class="total-col">200</td></tr>
-                <tr><td class="rank-col">13</td><td class="name-col">Michu</td><td>0</td><td>150</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total-col">150</td></tr>
-                <tr><td class="rank-col">14</td><td class="name-col">Olaf</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>0</td><td class="total-col">100</td></tr>
-                <tr><td class="rank-col">15</td><td class="name-col">PanMann</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>0</td><td>0</td><td class="total-col">100</td></tr>
+                <tr><td class="rank-col">13</td><td class="name-col">Kaktus</td><td>0</td><td>200</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total-col">200</td></tr>
+                <tr><td class="rank-col">14</td><td class="name-col">Michu</td><td>0</td><td>150</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total-col">150</td></tr>
+                <tr><td class="rank-col">16</td><td class="name-col">PanMann</td><td>0</td><td>0</td><td>0</td><td>0</td><td>100</td><td>0</td><td>0</td><td class="total-col">100</td></tr>
                 <tr><td class="rank-col">16</td><td class="name-col">Gefinka</td><td>0</td><td>100</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td class="total-col">100</td></tr>
                 <tr><td class="rank-col">17</td><td class="name-col">Mysterio</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>50</td><td>0</td><td class="total-col">50</td></tr>
             </tbody>
@@ -62,7 +63,7 @@
     </div>
 
     <footer>
-        <div class="new-era">DZIEŃ 6. ZALICZONY – TABELA W PŁOMIENIACH!</div>
+        <div class="grand-final">FINAŁ TYGODNIA ROZSTRZYGNIĘTY!</div>
     </footer>
 
 </body>
